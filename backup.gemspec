@@ -29,7 +29,6 @@ Gem::Specification.new do |gem|
 
   gem.add_dependency "thor", ">= 0.18.1"
   gem.add_dependency "open4", "1.3.0"
-  gem.add_dependency "fog", "~> 1.42"
   gem.add_dependency "excon", "~> 0.71"
   gem.add_dependency "unf", "0.1.3" # for fog/AWS
   gem.add_dependency "dropbox-sdk", "1.6.5"
@@ -48,9 +47,14 @@ Gem::Specification.new do |gem|
   gem.add_dependency "qiniu", "~> 6.5"
   gem.add_dependency "nokogiri", "~> 1.11"
   gem.add_dependency "activesupport", ">= 5"
+  gem.add_dependency "syslog", "~> 0.3.0"
+
 
   gem.add_development_dependency "rubocop", "0.48.1"
   gem.add_development_dependency "rake"
   gem.add_development_dependency "rspec", "3.8.0"
   gem.add_development_dependency "timecop", "0.9.4"
+  gem.add_development_dependency "webrick"
+  gem.add_development_dependency "fog-aws", "~> 3.0"
+  gem.add_development_dependency "fog-rackspace", "~> 0.1.6"
 end
